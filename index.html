@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>FizzBuzz</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <script>
+    let answer =  parseInt(prompt("Please enter a Number that you would like to FizzBuzz up to:"))
+    for(let i =1; i<=answer; i++){
+      if (i%3===0 && i%5===0) {
+        console.log('FizzBuzz')
+      }else if(i%5===0){
+        console.log('Buzz');
+      }else if (i%3===0){
+        console.log("Fizz");
+      } else{
+        console.log(i)
+      }
+    }
+  </script>
 </body>
 </html>
